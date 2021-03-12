@@ -4,6 +4,7 @@ var path = require('path');
 module.exports = {
   entry: {
     "app": "./src/main.ts",
+    "app-js": "./src/main-angularjs.js",
   },
 
   devtool: 'cheap-module-source-map',
@@ -23,8 +24,4 @@ module.exports = {
       { test: /\.tsx?$/,  use: [ "ts-loader" ] },
     ]
   },
-
-  externals: {
-    angular: 'angular',
-  }
 };
